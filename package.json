@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-fonts-com",
   "description": "Gatsby plugin to add Fonts.com webfont usage tracking to your site",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Ryandi Tjia <ryandi.tjia@gmail.com>",
   "repository": {
     "type": "git",
