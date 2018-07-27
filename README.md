@@ -20,6 +20,8 @@ module.exports = {
       resolve: 'gatsby-plugin-fonts-com',
       options: {
         projectId: 'YOUR_WEBFONT_PROJECT_ID',
+        // Optional. Disables tracking during gatsby develop. Defaults to true.
+        enableDuringDevelop: false,
       },
     }
     'your',
@@ -30,9 +32,5 @@ module.exports = {
 ```
 
 Restart your Gatsby server for the plugin to take effect.
-
-## Roadmap
-
-Add option to disable the plugin during development.
 
 If you have improvements that you’d like to see, or encounter any bugs, feel free to [create an issue](https://github.com/ryanditjia/gatsby-plugin-fonts-com/issues)!
