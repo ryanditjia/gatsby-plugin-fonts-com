@@ -1,35 +1,33 @@
 {
   "name": "gatsby-plugin-fonts-com",
-  "description": "Gatsby plugin to add Fonts.com webfont usage tracking to your site",
   "version": "0.0.2",
-  "author": "Ryandi Tjia <ryandi.tjia@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ryanditjia/gatsby-plugin-fonts-com"
-  },
-  "bugs": {
-    "url": "https://github.com/ryanditjia/gatsby-plugin-fonts-com/issues"
-  },
-  "homepage": "https://github.com/ryanditjia/gatsby-plugin-fonts-com",
-  "main": "gatsby-ssr.js",
-  "scripts": {
-    "format": "prettier --write \"src/**/*.js\"",
-    "lint": "eslint ./src --ext .js",
-    "build": "babel src --out-dir .",
-    "prepublish": "npm run build"
-  },
+  "description": "Gatsby plugin to add Fonts.com (by Monotype) webfont usage tracking to your site",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
+    "fonts",
     "fonts-com",
     "fonts-dot-com",
     "monotype",
     "webfont",
     "tracking"
   ],
+  "homepage": "https://github.com/ryanditjia/gatsby-plugin-fonts-com#readme",
+  "bugs": "https://github.com/ryanditjia/gatsby-plugin-fonts-com/issues",
   "license": "MIT",
-  "peerDependencies": {
-    "gatsby": "^1.0.0 || ^2.0.0 || ^2.0.0-alpha || ^2.0.0-beta"
+  "author": "Ryandi Tjia <ryandi.tjia@gmail.com> (https://artycurate.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanditjia/gatsby-plugin-fonts-com.git"
+  },
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint ./src --ext .js",
+    "build": "babel src --out-dir .",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -39,7 +37,10 @@
     "eslint-config-artycurate": "^1.3.0",
     "prettier": "^1.13.7"
   },
-  "dependencies": {
-    "fs-extra": "^7.0.0"
+  "peerDependencies": {
+    "gatsby": "^1.0.0 || ^2.0.0 || ^2.0.0-alpha || ^2.0.0-beta"
+  },
+  "engines": {
+    "node": ">=6.0"
   }
 }
