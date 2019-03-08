@@ -5,6 +5,6 @@ exports.onPostBootstrap = async ({ store }) => {
 
   await fs.copy(
     require.resolve('./static/mtiFontTrackingCode.js'),
-    `${program.directory}/public/mtiFontTrackingCode.js`
+    `${program.directory}/public/mtiFontTrackingCode.js`,
   )
 }

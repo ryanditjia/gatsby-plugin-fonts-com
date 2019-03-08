@@ -3,18 +3,18 @@ import React from 'react'
 
 exports.onRenderBody = (
   { setHeadComponents },
-  { projectId, enableDuringDevelop = true }
+  { projectId, enableDuringDevelop = true },
 ) => {
   if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
     console.log(
-      'gatsby-plugin-fonts-com configured not to load in development server.'
+      'gatsby-plugin-fonts-com configured not to load in development server.',
     )
     return null
   }
 
   if (!projectId) {
     console.log(
-      'You have not provided projectId, gatsby-plugin-fonts-com will not take effect.'
+      'You have not provided projectId, gatsby-plugin-fonts-com will not take effect.',
     )
     return null
   }
